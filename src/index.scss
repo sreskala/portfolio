@@ -1,15 +1,16 @@
 $base-color: #0b0c10;
+$secondary-color-1: #1f2833;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     background-color: $base-color;
 }
 
-p { 
-    font-size: 50px;
-}

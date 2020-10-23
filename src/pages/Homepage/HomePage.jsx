@@ -18,15 +18,15 @@ const HomePage = () => {
         <Fragment>
             <div className="container">
 
-               
-                    <h1
-                    className="title-header"
-                    //ref={ref}
+                <div
+                    className="lax header-div-title"
                     data-lax-scale="0 1, vh 0.2"
                     data-lax-translate-y="0 0, vh 1200"
-                    data-lax-opacity="0 1, (vh*0.5) 0"
-                    >Sam's Header</h1>
-               
+                    data-lax-opacity="0 1, (vh*0.5) 0">
+                    <h1 className="test-style">
+                        Sam Reskala
+                    </h1>
+                </div>
 
                 <div ref={ref} data-lax-translate-y="0 1, 400 -50" className="sky lax">
                     <img src={sky} alt="sky"/>

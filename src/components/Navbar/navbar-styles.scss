@@ -1,5 +1,7 @@
 $base-color: #0b0c10;
 $secondary-color-1: #1f2833;
+$tertiary-color-1: #45a29e;
+$tertiary-color-2: #66fcf1;
 
 .navbar {
     height: 80px;
@@ -49,11 +51,14 @@ $secondary-color-1: #1f2833;
 }
 
 .nav-links {
-    color: white;
+    color: $tertiary-color-1;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    margin: 0 .5rem;
     &:hover {
-        background-color: #1888ff;
+        // background-color: #1888ff;
+        border: 1px solid $tertiary-color-2;
+        color: $tertiary-color-2;
         border-radius: 4px;
         transition: all 0.2s ease-out;
     }
