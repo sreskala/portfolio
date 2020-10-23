@@ -20,11 +20,166 @@ div > img {
 }
 
 .mountains {
-    bottom: 48rem;
+    bottom: 38rem;
     z-index: -4;
+    right: 1px;
 }
 
 .city {
-    bottom: 90rem;
+    bottom: 73rem;
     z-index: -3;
+}
+
+.title-header {
+    z-index: 0;
+    position: relative;
+    top: 15rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .mountains, .city {
+        display: none;
+    }
+
+    .sky {
+        position: relative;
+        width: 100vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .container {
+        position: relative;
+    }
+    
+    .mountains, .sky, .city {
+        position: relative;
+        width: 100%;
+    }
+    
+    .sky {
+        bottom: 10rem;
+        z-index: -5;
+    }
+    
+    .mountains {
+        bottom: 35rem;
+        z-index: -4;
+    }
+    
+    .city {
+        bottom: 65rem;
+        z-index: -3;
+    }
+    
+    .title-header {
+        z-index: 0;
+        position: relative;
+        top: 15rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .container {
+        position: relative;
+    }
+    
+    .mountains, .sky, .city {
+        position: relative;
+        width: 100%;
+    }
+    
+    .sky {
+        bottom: 3rem;
+        z-index: -5;
+    }
+    
+    .mountains {
+        bottom: 35rem;
+        z-index: -4;
+    }
+    
+    .city {
+        bottom: 72rem;
+        z-index: -3;
+    }
+    
+    .title-header {
+        z-index: 0;
+        position: relative;
+        top: 15rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1460px) {
+
+    .container {
+        position: relative;
+    }
+    
+    .mountains, .sky, .city {
+        position: relative;
+        width: 100%;
+    }
+    
+    .sky {
+        bottom: 3rem;
+        z-index: -5;
+    }
+    
+    .mountains {
+        bottom: 40rem;
+        z-index: -4;
+    }
+    
+    .city {
+        bottom: 82rem;
+        z-index: -3;
+    }
+    
+    .title-header {
+        z-index: 0;
+        position: relative;
+        top: 15rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .container {
+        position: relative;
+    }
+    
+    .mountains, .sky, .city {
+        position: relative;
+        width: 100%;
+    }
+    
+    .sky {
+        bottom: 3rem;
+        z-index: -5;
+    }
+    
+    .mountains {
+        bottom: 50rem;
+        z-index: -4;
+    }
+    
+    .city {
+        bottom: 100rem;
+        z-index: -3;
+    }
+    
+    .title-header {
+        z-index: 0;
+        position: relative;
+        top: 15rem;
+        text-align: center;
+    }
 }
