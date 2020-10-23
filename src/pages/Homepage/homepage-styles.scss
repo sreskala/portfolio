@@ -1,0 +1,30 @@
+div > img {
+    width: 100vw;
+    height: auto;
+}
+
+
+
+.container {
+    position: relative;
+}
+
+.mountains, .sky, .city {
+    position: relative;
+    width: 100%;
+}
+
+.sky {
+    bottom: 10rem;
+    z-index: -5;
+}
+
+.mountains {
+    bottom: 48rem;
+    z-index: -4;
+}
+
+.city {
+    bottom: 90rem;
+    z-index: -3;
+}

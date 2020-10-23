@@ -13,6 +13,7 @@ const Navbar = () => {
 
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
+    const [navbar, setNavbar] = useState(false);
     //const[active, setActive] = useState(false);
 
     const handleClick = () => setClick(!click);
@@ -37,9 +38,19 @@ const Navbar = () => {
         }
     }
 
+    const changeBackground = () => {
+        if(window.scrollY >= 100) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener("scroll", changeBackground);
+
     return (
         <Fragment>
-            <nav className="navbar">
+            <nav className={`navbar ${navbar ? 'active' : ''}`}>
                 <Link to='/' className='navbar-logo'>
                     SAM
                 </Link>
@@ -50,7 +61,7 @@ const Navbar = () => {
                     burger="spin"
                     color="white"
                     hoverOpacity={0.8}
-                    scale={1.2} 
+                    scale={1} 
                     />
                     {/* <i
                         className={click
