@@ -1,6 +1,10 @@
-  
+$base-color: #0b0c10;
+$secondary-color-1: #1f2833;
+$secondary-color-2: #c5c6c7;
+$tertiary-color-1: #45a29e;
+$tertiary-color-2: #66fcf1;
+
 .dropdown-menu {
-    background: red;
     width: 200px;
     position: absolute;
     top: 60px;
@@ -10,12 +14,12 @@
   }
   
   .dropdown-menu li {
-    background: #1888ff;
+    background: $secondary-color-1;
     cursor: pointer;
   }
   
   .dropdown-menu li:hover {
-    background: #5cabff;
+    background: $secondary-color-2;
   }
   
   .dropdown-menu.clicked {
@@ -27,8 +31,12 @@
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: #fff;
+    color: $tertiary-color-1;
     padding: 16px;
+
+    &:hover {
+      color: $tertiary-color-2;
+    }
   }
   
   @media screen and (max-width: 960px) {
