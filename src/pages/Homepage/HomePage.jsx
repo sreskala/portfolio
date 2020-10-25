@@ -1,6 +1,9 @@
 import React, {Fragment} from 'react';
 import './homepage-styles.scss';
 
+//test
+import Skills from '../../components/Skills/Skills';
+
 //images
 import sky from '../../assets/Background.png';
 import mountains from '../../assets/MiddleImage.png';
@@ -9,6 +12,7 @@ import city from '../../assets/FrontImage.png';
 import {useLax, useLaxElement} from 'use-lax';
 
 const HomePage = () => {
+    
 
     useLax();
 
@@ -41,6 +45,8 @@ const HomePage = () => {
                 </div>
 
             </div>
+
+            <Skills />
 
         </Fragment>
     )
