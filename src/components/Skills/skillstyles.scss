@@ -1,0 +1,36 @@
+$base-color: #0b0c10;
+$secondary-color-1: #1f2833;
+$secondary-color-2: #c5c6c7;
+$tertiary-color-1: #45a29e;
+$tertiary-color-2: #66fcf1;
+
+.skills {
+    display: relative;
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin: 0 auto;
+
+    .skill-element {
+        background-color: $secondary-color-2;
+        margin: 1.5rem;
+        padding: .5rem;
+        width: 180px;
+        border: 3px solid $tertiary-color-1;
+        border-radius: 15%;
+    }
+}
+
+.skills-header-container {
+    text-align: center;
+}
+
+.skills-header {
+    color: $tertiary-color-2;
+    font-size: 70px;
+}
