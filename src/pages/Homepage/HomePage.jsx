@@ -3,6 +3,7 @@ import './homepage-styles.scss';
 
 //test
 import Skills from '../../components/Skills/Skills';
+import Form from '../../components/Form/Form';
 
 //images
 import sky from '../../assets/Background.png';
@@ -47,6 +48,7 @@ const HomePage = () => {
             </div>
 
             <Skills />
+            <Form />
 
         </Fragment>
     )

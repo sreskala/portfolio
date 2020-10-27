@@ -4,22 +4,22 @@ $secondary-color-2: #c5c6c7;
 $tertiary-color-1: #45a29e;
 $tertiary-color-2: #66fcf1;
 
-.skills {
+.all-skills {
     display: relative;
+    //margin-top: -100px;
 }
-
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 90vw;
+    width: 65vw;
     margin: 0 auto;
 
     .skill-element {
-        background-color: $secondary-color-2;
+        background-color: rgba($color:#c5c6c7 , $alpha: 0.5);
         margin: 1.5rem;
-        padding: .5rem;
+        padding: 0.5rem;
         width: 180px;
         border: 3px solid $tertiary-color-1;
         border-radius: 15%;
@@ -33,4 +33,56 @@ $tertiary-color-2: #66fcf1;
 .skills-header {
     color: $tertiary-color-2;
     font-size: 70px;
+}
+@media screen and (max-width: 1680px) {
+    .all-skills {
+        display: relative;
+        margin-top: -50px;
+    }
+
+}
+@media screen and (max-width: 1580px) {
+    .all-skills {
+        display: relative;
+        margin-top: -150px;
+    }
+}
+@media screen and (max-width: 1380px) {
+    .all-skills {
+        display: relative;
+        margin-top: -200px;
+    }
+
+}
+@media screen and (max-width: 1280px) {
+    .all-skills {
+        display: relative;
+        margin-top: -300px;
+    }
+
+    .skills-container {
+        width: 90vw;
+        .skill-element {
+            width: 100px;
+        }
+    }
+
+}
+@media screen and (max-width: 1180px) {
+    .all-skills {
+        display: relative;
+        margin-top: -450px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .all-skills {
+        display: relative;
+        margin-top: -350px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .all-skills {
+        display: relative;
+        margin-top: -480px;
+    }
 }

@@ -11,7 +11,7 @@ const Skills = () => {
 
     return (
 
-        <Fragment className="skills">
+        <Fragment>
 
             <div className="all-skills">
                 <div className="skills-header-container">
@@ -20,11 +20,11 @@ const Skills = () => {
                     </h1>
                 </div>
 
-                <div class="skills-container">
+                <div className="skills-container">
                     {svgArray.map((elName, index) => {
                         return (
                             <div className="skill-element" key={index}>
-                                <SVGcomponent name={elName} height="150px"/>
+                                <SVGcomponent name={elName} height="100px"/>
                             </div>
                         );
                     })
