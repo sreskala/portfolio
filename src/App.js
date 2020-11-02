@@ -5,12 +5,15 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 //pages
 import HomePage from './pages/Homepage/HomePage';
-import AboutPage from './pages/AboutPage';
+import AboutPage from './pages/Aboutpage/AboutPage';
+import PortfolioPage from './pages/Portfoliopage/PortfolioPage';
 
 import Page from 'react-page-loading';
 
 //components
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+
 
 
 function App() {
@@ -44,7 +47,9 @@ function App() {
             <Switch>
                 <Route exact path='/' component={HomePage}/>
                 <Route exact path='/about' component={AboutPage}/>
+                <Route exact path ='/portfolio' component={PortfolioPage} />
             </Switch>
+            <Footer />
         </Router>
         </Page>
     );

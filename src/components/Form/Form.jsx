@@ -12,40 +12,59 @@ const Form = () => {
         emailjs
             .sendForm('service_vz19pfj', 'template_3v207mv', e.target, 'user_P7OwsZ4Ei0lLCwozDf4ow')
             .then((result) => {
-                console.log(result.text);
+                alert("Message successfully sent!");
             }, (error) => {
                 console.log(error.text);
             });
         e
             .target
             .reset();
+
     }
 
     return (
-        <div class="form-main-container">
+        <div className="form-main-container">
             <h1 className="form-header-title">Get In Touch</h1>
             <div className="form-sub-container">
                 <form onSubmit={sendEmail}>
 
                     <div className="input-form-container">
                         <label htmlFor="name">Name</label>
-                        <input type="text" name="name" id="name"/>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="John Doe"/>
                     </div>
 
                     <div className="input-form-container">
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email" id="email"/>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="john@example.com"/>
                     </div>
 
                     <div className="input-form-container">
                         <label htmlFor="subject">Subject</label>
-                        <input type="text" name="subject" id="subject"/>
+                        <input
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            placeholder="Hello!"/>
                     </div>
-                    
+
                     <div className="text-area-container">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Type your message..."></textarea>
+                        <input type="submit" value="Send" id="submit-button"/>
                     </div>
-                    <input type="submit" value="Send" id="submit-button"/>
+
                 </form>
             </div>
         </div>

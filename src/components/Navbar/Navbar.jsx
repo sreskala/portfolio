@@ -8,6 +8,9 @@ import Burger from 'react-css-burger';
 //styles
 import './navbar-styles.scss';
 
+//images
+import logo from '../../assets/logo.png';
+
 
 const Navbar = () => {
 
@@ -52,7 +55,7 @@ const Navbar = () => {
         <Fragment>
             <nav className={`navbar ${navbar ? 'active' : ''}`}>
                 <Link to='/' className='navbar-logo'>
-                    SAM
+                    <img src={logo} alt="logo"/>
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <Burger

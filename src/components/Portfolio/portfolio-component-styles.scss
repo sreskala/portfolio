@@ -1,0 +1,16 @@
+$base-color: #0b0c10;
+$secondary-color-1: #1f2833;
+$secondary-color-2: #c5c6c7;
+$tertiary-color-1: #45a29e;
+$tertiary-color-2: #66fcf1;
+
+.portfolio-component {
+    margin: 20px;
+
+    .portfolio-content-container {
+        img {
+            width: 45vw;
+            height: auto;
+        }
+    }
+}

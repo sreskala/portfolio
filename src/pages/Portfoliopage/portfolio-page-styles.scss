@@ -1,0 +1,20 @@
+$base-color: #0b0c10;
+$secondary-color-1: #1f2833;
+$secondary-color-2: #c5c6c7;
+$tertiary-color-1: #45a29e;
+$tertiary-color-2: #66fcf1;
+
+.portfolio-container {
+    padding: 150px 20px;
+    text-align: center;
+
+    h1 {
+        color: $tertiary-color-1;
+    }
+
+    hr {
+        width: 50vw;
+        margin: .5rem auto;
+        border-color: $tertiary-color-1;
+    }
+}

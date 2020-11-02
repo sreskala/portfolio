@@ -23,6 +23,21 @@ input {
     border: none;
     border-width: 0;
     border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    width: 30px;
+    background-color: $secondary-color-2;
+    color: $tertiary-color-1;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 
@@ -57,13 +72,31 @@ input {
     justify-content: flex-end;
 }
 
+
 .text-area-container {
-    text-align: end;
+    display: flex;
+    flex-direction: column;
 
     & textarea {
-        width: 22vw;
+        width: 100%;
         border-radius: 5px;
         border-width: 0;
         border: none;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #submit-button {
+        width: 50%;
+        font-size: 20px;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-5px);
+            color: $tertiary-color-2;
+            box-shadow: 0 10px 15px black;
+        }
     }
 }
+

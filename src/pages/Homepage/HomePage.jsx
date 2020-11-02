@@ -31,7 +31,9 @@ const HomePage = () => {
                     <h1 className="test-style">
                         Sam Reskala
                     </h1>
+                    
                 </div>
+
 
                 <div ref={ref} data-lax-translate-y="0 1, 400 -50" className="sky lax">
                     <img src={sky} alt="sky"/>

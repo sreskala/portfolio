@@ -1,22 +1,22 @@
 export const projectItems = [
     {
-        title: 'Project1',
-        path: '/project1',
+        title: 'Weather App',
+        path: '/portfolio',
         cName: 'dropdown-link'
     },
     {
-        title: 'Project2',
-        path: '/project2',
+        title: 'Static Store Front',
+        path: '/portfolio',
         cName: 'dropdown-link'
     },
     {
-        title: 'Project3',
-        path: '/project3',
+        title: 'C# Challenges',
+        path: '/portfolio',
         cName: 'dropdown-link'
     },
     {
         title: 'More...',
-        path: '/projects',
+        path: '/portfolio',
         cName: 'dropdown-link'
     }
 ];

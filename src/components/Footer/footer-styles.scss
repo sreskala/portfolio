@@ -1,0 +1,29 @@
+$base-color: #0b0c10;
+$secondary-color-1: #1f2833;
+$secondary-color-2: #c5c6c7;
+$tertiary-color-1: #45a29e;
+$tertiary-color-2: #66fcf1;
+
+.footer-container {
+    background-color: $secondary-color-1;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 100px;
+
+    footer {
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            color: $tertiary-color-1;
+            margin: 0 10px;
+        }
+        p {
+            color: $tertiary-color-1;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            }
+    }
+}
