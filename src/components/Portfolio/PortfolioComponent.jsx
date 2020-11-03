@@ -24,6 +24,7 @@ const PortfolioComponent = (props) => {
                     </a>)
                 }
             </div>
+            <hr />
         </div>
     )
 }
